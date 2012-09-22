@@ -8,8 +8,7 @@ module Connect4
       @board = Board.new
 
       @players = players.map{|p| [p, colours[players.index(p)]]}
-      @state = Array.new(6) {Array.new(7, :none)}
-
+      
       @turn = 0
 
     end
@@ -19,7 +18,7 @@ module Connect4
     def tick
       @player, colour = @players[@turn % 2]
       @opponent = @players[(@turn+1) % 2][0]
-      col = @player.take_turn(@state, colour)
+      col = @player.take_turn(report, colour)
       
       result = update_state(col, colour)
 

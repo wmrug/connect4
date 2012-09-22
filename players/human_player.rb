@@ -10,6 +10,7 @@ class HumanPlayer
     # puts "mines remaining: #{mines_remaining.inspect}"
     puts "column (0-6)?"
     y = stdin.gets.strip.to_i
+
   end
   
   
