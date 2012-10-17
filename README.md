@@ -30,7 +30,7 @@ This implementation is based on the ruby implementation for the game Battleships
 
 Play takes place on a 7x6 grid. Co-ordinates are given in the order _(x,y)_
 and are zero-indexed relative to the top left, i.e. _(0,0)_ is the top left,
-_(9,0)_ is the top right, and _(9,9)_ is the bottom right.
+_(6,0)_ is the top right, and _(6,5)_ is the bottom right.
 
 A player is implemented as a Ruby class. The name of the class must be unique
 and end with `Player`. It must implement the following instance methods:
