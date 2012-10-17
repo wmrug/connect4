@@ -17,6 +17,7 @@ module Connect4
 
     def tick
       @player, colour = @players[@turn % 2]
+      puts "Current player: #{@player.name}"
       @opponent = @players[(@turn+1) % 2][0]
       col = @player.take_turn(report, colour)
       
