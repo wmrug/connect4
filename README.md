@@ -18,7 +18,7 @@ Play alternates between players until one of them wins, or the game is a draw.
 
 ### Additional rules
 
-* The official interpreter is Ruby 1.9.2.
+* The official interpreter is Ruby 2.0.0
 * The player will not have access to the game objects.
 * The player may `require` Ruby source files from within a `lib` directory in the same place as the player file (i.e. `players/player.rb` can use `players/lib/foo/bar.rb` via `require "foo/bar"`.)
 * A file should not implement more than one player class.
