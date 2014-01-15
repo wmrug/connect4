@@ -1,4 +1,4 @@
-class StupidPlayer
+class HalPlayer
 
   def initialize
     @output = File.open( "/Users/will/output.txt", "a" )
