@@ -3,7 +3,7 @@ class HumanPlayer
   
   attr_accessor :stdin
   def name
-    "Paul + Omar"
+    "Human"
   end
 
   def take_turn(state, colour)
